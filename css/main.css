@@ -1,0 +1,307 @@
+/*Header Section*/
+.top-banner {
+    background-color: rgb(14, 14, 14);
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.top-banner p {
+    font-size: .75rem;
+    color: rgb(255, 255, 255);
+    max-width: 1280px;
+    padding: 0 25px;
+    text-align: center;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+}
+
+/*Navigation bar Section*/
+.navbar {
+    background: #fe8c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: rgb(255, 255, 255);
+    padding-left: 80px;
+    padding-right: 100px;
+
+}
+
+.navbar ul {
+    display: flex;
+    animation: slideInFromRight 1s ease-in;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px rgb(27, 27, 27) solid;
+    color: rgb(27, 27, 27);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.top-cont {
+    margin: 0 auto;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.brand {
+    font-weight: 100;
+    font-size: 4rem;
+    padding-bottom: 10px;
+}
+
+/*Hero section*/
+.hero {
+    height: 100%;
+    background: #fe8c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(248, 54, 0, .95), rgb(254, 140, 0, .95)), url('/assets/content/manila-pexels.jpg'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    position: relative;
+    margin-top: 1px;
+    overflow: visible;
+    grid-template-columns: 55% auto;
+    gap: 30%;
+    justify-content: center;
+}
+
+.welcome-txt {
+    animation: slideInfromLeft 1s ease-in;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.hero p {
+    margin: 20px 0;
+}
+
+.grid-cont {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: visible;
+    padding-left: 0 60px;
+    margin: 0 40px;
+}
+
+/*Hero section - diagonal */
+.hero::before,
+.hero::after {
+    content: '';
+    position: absolute;
+    height: 130px;
+    inset: 340px 0 0 0;
+    background-color: rgb(243, 243, 243);
+    transform: skewY(-2deg);
+    -webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+}
+
+.welcome-txt {
+    animation: slideInFromLeft 1s ease-in;
+}
+
+/*form on right-hand side*/
+.invite-form {
+    background-color:rgb(243, 243, 243);
+    color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    padding: 30px;
+    margin: 10px;
+    position: relative;
+    height: 350px;
+    width: 400px;
+    top: 70px;
+    z-index: 100;
+    animation: slideInFromRight 1s ease-in;
+}
+
+.invite-form h2 {
+    color: rgb(27, 27, 27);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.invite-form .img-cuppa {
+    width: 180px;
+    position: absolute;
+    right: -20px;
+    display: flex;
+    padding: 0;
+}
+
+.form-control {
+    margin: 30px 0;
+}
+
+.form-control input[type="text"],
+.form-control input[type="email"],
+.form-control input[type="comment"] {
+    border: 0;
+    border-bottom: 1px solid rgb(27, 27, 27);
+    background-color: rgb(243, 243, 243);
+    width: 60%;
+    padding:  3px;
+    font-size: 1rem;
+}
+
+/*Button css styles*/
+/*form-control - button*/
+.btn-submit {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    background-color: rgb(27, 27, 27);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+
+}
+
+/*See more - button*/
+.hero-btn-outline {
+    background-color:transparent;
+    border:  1px rgb(0, 0, 0) solid;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-weight: 600;
+    width: 30px;
+    display: inline;
+}
+
+.btn-submit:hover {
+    transform: scale(.85);
+}
+
+.form-control input:focus {
+    outline: none;
+}
+
+/*Skill set tools title*/
+.skillsets-cont {
+    padding-top: 200px;
+    max-width: 1100px;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.skillsets-cont h2 {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+/*Skill set tools -boxes */
+.card {
+    background-color: rgb(243, 243, 243);
+    color: rgb(27, 27, 27);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    width: 120px;
+    padding: 15px 0 15px 0;
+    height: 150px;
+}
+
+.card img {
+    width:80px;
+    padding: 10px;
+}
+
+.flex-cont-tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-cont-tools .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform .2s ease-in;
+}
+
+.card h3 {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-bottom: 10px;
+    line-height: 1;
+}
+
+/*Skill set tools -hover animation*/
+.flex-cont-tools .card:hover {
+    transform: translateY(-15px)
+}
+
+/*footer*/
+.footer-bg-dark {
+    background-color: rgb(14, 14, 14);
+    color: whitesmoke;
+}
+
+.footer-cont-grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content:center;
+    align-items: center;
+    max-height: 400px;
+    margin: 0 120px;
+    padding: 10px 40px;
+}
+
+.explore-nav {
+    margin-top: 40px;
+}
+
+.explore-nav a {
+    color: whitesmoke;
+    font-weight: 100;
+}
+
+.explore-nav a:hover {
+    border-bottom:#fe8c00 1px solid;
+}
+
+.socials .demo-copyright {
+    margin-top: -20px;
+}
+
+.socials i {
+    color: whitesmoke;
+    margin: 0 5px;
+}
+
+.socials i:hover {
+    color: #fe8c00;
+}
+
+.demo-copyright h1 p {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 100;
+    font-size: 1.75rem;
+}
