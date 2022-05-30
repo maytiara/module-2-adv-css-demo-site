@@ -12,7 +12,8 @@ Can be found: [Github Repo](https://github.com/maytiara?tab=repositories) or
 Software      | Front-end Language
 ------------- | -------------
 Adobe 
-Illustrator   | Html5, CSS3
+Illustrator   | 
+VS Code       | Html5, CSS3
 
 ## Challenges:
  >> At first, you would think you are already on track with everything, but after planning out the visual look of your index page you are suddenly caught in a "brain fog moment". But during the process of building the website, there will have a code that won't work even how far you tried to search for a solution. Here are the following obstacles I noticed if you need instant support "it won't happen as you were working remotely" and lastly the time if you don't manage your time and allocate a big amount of time to the project "You're DONE/FINISH".  
@@ -21,7 +22,7 @@ Illustrator   | Html5, CSS3
 
   >> Finally, I made it! Another late submission, but with full of confidence, that I did something right :-)
 
-## Learn More of this ff:
+## Learn More of those ff:
 * Responsive website properties
 * SAAS
 * Bootstrap
